@@ -222,6 +222,36 @@
 		<root class="ALIAS_NAME_RULE_2" feature="make"/>
 		<cluster name="rules" location=".\" recursive="true"/>
 	</target>
+	<target name="alias_name_rule_3" extends="rules">
+		<root class="ALIAS_NAME_RULE_3" feature="make"/>
+		<cluster name="rules" location=".\" recursive="true"/>
+	</target>
+	<target name="create_rule_1" extends="rules">
+		<root class="CREATE_RULE_1" feature="make"/>
+		<cluster name="rules" location=".\" recursive="true"/>
+	</target>
+	<target name="create_rule_2" extends="rules">
+		<root class="CREATE_RULE_2" feature="make"/>
+		<cluster name="rules" location=".\" recursive="true"/>
+	</target>
+	<target name="create_rule_3" extends="rules">
+		<root class="CREATE_RULE_3" feature="make"/>
+		<cluster name="rules" location=".\" recursive="true"/>
+	</target>
+	<target name="create_rule_4" extends="rules">
+		<root class="CREATE_RULE_4" feature="make"/>
+		<cluster name="rules" location=".\" recursive="true"/>
+	</target>
+	<target name="create_rule_5" extends="rules">
+		<root class="CREATE_RULE_5" feature="make"/>
+		<cluster name="rules" location=".\" recursive="true"/>
+	</target>
+	<target name="create_rule_6" extends="rules">
+		<root class="CREATE_RULE_6" feature="make"/>
+		<cluster name="rules" location=".\" recursive="true"/>
+	</target>
+
+
 
 
 	<target name="test" extends="rules">
