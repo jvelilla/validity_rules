@@ -130,6 +130,69 @@
 		<root class="PROCEDURE_CALL_RULE" feature="make"/>
 		<cluster name="rules" location=".\" recursive="true"/>
 	</target>		
+	<target name="formal_generic_parameter_rule" extends="rules">
+		<root class="FORMAL_GENERIC_PARAMETER_RULE" feature="make"/>
+		<cluster name="rules" location=".\" recursive="true"/>
+	</target>
+	<target name="formal_generic_parameter_rule_2" extends="rules">
+		<root class="FORMAL_GENERIC_PARAMETER_RULE_2" feature="make"/>
+		<cluster name="rules" location=".\" recursive="true"/>
+	</target>		
+	<target name="join_feature_rule" extends="rules">
+		<root class="JOIN_FEATURE_RULE_1" feature="make"/>
+		<cluster name="rules" location=".\" recursive="true"/>
+	</target>
+	<target name="redefinition_rule_2" extends="rules">
+		<root class="REDEFINITION_RULE_2" feature="make"/>
+		<cluster name="rules" location=".\" recursive="true"/>
+	</target>
+	<target name="redefinition_rule_5" extends="rules">
+		<root class="REDEFINITION_RULE_5" feature="make"/>
+		<cluster name="rules" location=".\" recursive="true"/>
+	</target>
+	<target name="redefinition_rule_6" extends="rules">
+		<root class="REDEFINITION_RULE_6" feature="make"/>
+		<cluster name="rules" location=".\" recursive="true"/>
+	</target>
+	<target name="redefinition_rule_3" extends="rules">
+		<root class="REDEFINITION_RULE_3" feature="make"/>
+		<cluster name="rules" location=".\" recursive="true"/>
+	</target>
+	<target name="redefinition_rule_7" extends="rules">
+		<root class="REDEFINITION_RULE_7" feature="make"/>
+		<cluster name="rules" location=".\" recursive="true"/>
+	</target>
+	<target name="redefinition_rule_8" extends="rules">
+		<root class="REDEFINITION_RULE_8" feature="make"/>
+		<cluster name="rules" location=".\" recursive="true"/>
+	</target>
+	<target name="redefinition_rule_9" extends="rules">
+		<root class="REDEFINITION_RULE_9" feature="make"/>
+		<cluster name="rules" location=".\" recursive="true"/>
+	</target>
+	<target name="redefinition_rule_10" extends="rules">
+		<root class="REDEFINITION_RULE_10" feature="make"/>
+		<cluster name="rules" location=".\" recursive="true"/>
+	</target>
+	<target name="redefinition_rule_11" extends="rules">
+		<root class="REDEFINITION_RULE_11" feature="make"/>
+		<cluster name="rules" location=".\" recursive="true"/>
+	</target>
+	<target name="redefinition_rule_12" extends="rules">
+		<root class="REDEFINITION_RULE_12" feature="make"/>
+		<cluster name="rules" location=".\" recursive="true"/>
+	</target>
+	<target name="redefinition_rule_13" extends="rules">
+		<root class="REDEFINITION_RULE_13" feature="make"/>
+		<cluster name="rules" location=".\" recursive="true"/>
+	</target>
+	<target name="redefinition_rule_14" extends="rules">
+		<root class="REDEFINITION_RULE_14" feature="make"/>
+		<cluster name="rules" location=".\" recursive="true"/>
+	</target>
+
+
+
 	<target name="test" extends="rules">
 		<root class="TEST" feature="make"/>
 		<cluster name="rules" location=".\" recursive="true"/>
