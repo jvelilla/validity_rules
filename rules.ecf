@@ -190,7 +190,38 @@
 		<root class="REDEFINITION_RULE_14" feature="make"/>
 		<cluster name="rules" location=".\" recursive="true"/>
 	</target>
-
+	<target name="unefinition_rule_1" extends="rules">
+		<root class="UNDEFINITION_RULE_1" feature="make"/>
+		<cluster name="rules" location=".\" recursive="true"/>
+	</target>
+	<target name="unefinition_rule_2" extends="rules">
+		<root class="UNDEFINITION_RULE_2" feature="make"/>
+		<cluster name="rules" location=".\" recursive="true"/>
+	</target>
+	<target name="assigner_rule_1" extends="rules">
+		<root class="ASSIGNER_COMMAND_RULE_1" feature="make"/>
+		<cluster name="rules" location=".\" recursive="true"/>
+	</target>
+	<target name="assigner_rule_2" extends="rules">
+		<root class="ASSIGNER_COMMAND_RULE_2" feature="make"/>
+		<cluster name="rules" location=".\" recursive="true"/>
+	</target>
+	<target name="assigner_rule_3" extends="rules">
+		<root class="ASSIGNER_COMMAND_RULE_3" feature="make"/>
+		<cluster name="rules" location=".\" recursive="true"/>
+	</target>
+	<target name="assigner_rule_4" extends="rules">
+		<root class="ASSIGNER_COMMAND_RULE_4" feature="make"/>
+		<cluster name="rules" location=".\" recursive="true"/>
+	</target>
+	<target name="alias_name_rule_1" extends="rules">
+		<root class="ALIAS_NAME_RULE_1" feature="make"/>
+		<cluster name="rules" location=".\" recursive="true"/>
+	</target>
+	<target name="alias_name_rule_2" extends="rules">
+		<root class="ALIAS_NAME_RULE_2" feature="make"/>
+		<cluster name="rules" location=".\" recursive="true"/>
+	</target>
 
 
 	<target name="test" extends="rules">
