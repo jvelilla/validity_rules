@@ -1,90 +1,76 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
-<system xmlns="http://www.eiffel.com/developers/xml/configuration-1-18-0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.eiffel.com/developers/xml/configuration-1-18-0 http://www.eiffel.com/developers/xml/configuration-1-18-0.xsd" name="rules" uuid="F47B1A8C-8118-4693-8C92-9622B51A4169">
-	<target name="rules" abstract="true">	
+<system xmlns="http://www.eiffel.com/developers/xml/configuration-1-20-0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.eiffel.com/developers/xml/configuration-1-20-0 http://www.eiffel.com/developers/xml/configuration-1-20-0.xsd" name="rules" uuid="F47B1A8C-8118-4693-8C92-9622B51A4169">
+	<target name="rules" abstract="true">
 		<file_rule>
-			<exclude>/\.git$</exclude>
-			<exclude>/\.svn$</exclude>
 			<exclude>/CVS$</exclude>
 			<exclude>/EIFGENs$</exclude>
+			<exclude>/\.git$</exclude>
+			<exclude>/\.svn$</exclude>
 			<exclude>/duplicate$</exclude>
 		</file_rule>
 		<option warning="true">
 			<assertions precondition="true" postcondition="true" check="true" invariant="true" loop="true" supplier_precondition="true"/>
 		</option>
 		<setting name="console_application" value="true"/>
-		<library name="base" location="$ISE_LIBRARY/library/base/base.ecf"/>
+		<setting name="dead_code_removal" value="feature"/>
+		<library name="base" location="$ISE_LIBRARY\library\base\base.ecf"/>
 	</target>
-
 	<target name="feature_name_rule" extends="rules">
 		<root class="FEATURE_NAME_RULE" feature="default_create"/>
 		<cluster name="rules" location=".\" recursive="true"/>
 	</target>
-
 	<target name="feature_name_rule1" extends="rules">
 		<root class="FEATURE_NAME_RULE1" feature="default_create"/>
 		<cluster name="rules" location=".\" recursive="true"/>
 	</target>
-
 	<target name="class_name_rule" extends="rules">
 		<root class="CLASS_NAME_RULE" feature="default_create"/>
 		<cluster name="rules" location=".\" recursive="true"/>
 	</target>
-
 	<target name="root_type_rule" extends="rules">
 		<root class="ROOT_TYPE_RULE" feature="make"/>
 		<cluster name="rules" location=".\" recursive="true"/>
 	</target>
-
 	<target name="root_type_rule_2" extends="rules">
 		<root class="ROOT_TYPE_RULE_2" feature="make"/>
 		<cluster name="rules" location=".\" recursive="true"/>
 	</target>
-
 	<target name="root_type_rule_3" extends="rules">
 		<root class="ROOT_TYPE_RULE_3" feature="make"/>
 		<cluster name="rules" location=".\" recursive="true"/>
 	</target>
-
 	<target name="root_procedure_rule" extends="rules">
 		<root class="ROOT_PROCEDURE_RULE" feature="make"/>
 		<cluster name="rules" location=".\" recursive="true"/>
 	</target>
-
 	<target name="generic_type_rule" extends="rules">
 		<root class="GENERIC_TYPE_RULE" feature="make"/>
 		<cluster name="rules" location=".\" recursive="true"/>
 	</target>
-
 	<target name="generic_type_rule2" extends="rules">
 		<root class="GENERIC_TYPE_RULE_2" feature="make"/>
 		<cluster name="rules" location=".\" recursive="true"/>
 	</target>
-
 	<target name="root_clause_inconsitency" extends="rules">
 		<root class="ROOT_CLAUSE_INCONSISTENCY" feature="make"/>
 		<cluster name="rules" location=".\" recursive="true"/>
 	</target>
-
 	<target name="name_collision" extends="rules">
 		<root class="NAME_COLLISION" feature="make"/>
 		<cluster name="rules" location=".\" recursive="true"/>
 	</target>
-
 	<target name="name_collision_2" extends="rules">
 		<root class="NAME_COLLISION_2" feature="make"/>
 		<cluster name="rules" location=".\" recursive="true"/>
 	</target>
-
 	<target name="name_collision_3" extends="rules">
 		<root class="NAME_COLLISION_3" feature="make"/>
 		<cluster name="rules" location=".\" recursive="true"/>
 	</target>
-
 	<target name="name_collision_4" extends="rules">
 		<root class="NAME_COLLISION_4" feature="make"/>
 		<cluster name="rules" location=".\" recursive="true"/>
 	</target>
-
 	<target name="name_collision_5" extends="rules">
 		<root class="NAME_COLLISION_5" feature="make"/>
 		<cluster name="rules" location=".\" recursive="true"/>
@@ -96,8 +82,7 @@
 	<target name="duplicate_class" extends="rules">
 		<root class="DUPLICATE_CLASS" feature="make"/>
 		<cluster name="rules" location=".\" recursive="true">
-			<cluster name="duplicate" location="$|duplicate\">
-			</cluster>
+			<cluster name="duplicate" location="$|duplicate\"/>
 		</cluster>
 	</target>
 	<target name="exported_rule" extends="rules">
@@ -108,10 +93,45 @@
 		<root class="DEFERRED_FEATURE_RULE" feature="make"/>
 		<cluster name="rules" location=".\" recursive="true"/>
 	</target>
-
+	<target name="invalid_option_rule" extends="rules">
+		<root class="INVALID_OPTION_RULE" feature="make"/>
+		<setting name="address_expression" value="Flase"/>
+		<cluster name="rules" location=".\" recursive="true"/>
+	</target>
+	<target name="invalid_inspect_rule_1" extends="rules">
+		<root class="INVALID_INSPECT_RULE_1" feature="make"/>
+		<cluster name="rules" location=".\" recursive="true"/>
+	</target>
+	<target name="invalid_interval_rule" extends="rules">
+		<root class="INVALID_INTERVAL_VALUE" feature="make"/>
+		<cluster name="rules" location=".\" recursive="true"/>
+	</target>
+	<target name="invalid_inspect_rule_2" extends="rules">
+		<root class="INVALID_INSPECT_RULE_2" feature="make"/>
+		<cluster name="rules" location=".\" recursive="true"/>
+	</target>
+	<target name="invalid_inspect_rule_3" extends="rules">
+		<root class="INVALID_INSPECT_RULE_3" feature="make"/>
+		<cluster name="rules" location=".\" recursive="true"/>
+	</target>
+	<target name="old_expression_rule_1" extends="rules">
+		<root class="OLD_EXPRESSION_RULE" feature="make"/>
+		<cluster name="rules" location=".\" recursive="true"/>
+	</target>
+	<target name="old_expression_rule_2" extends="rules">
+		<root class="OLD_EXPRESSION_RULE_2" feature="make"/>
+		<cluster name="rules" location=".\" recursive="true"/>
+	</target>
+	<target name="expression_rule" extends="rules">
+		<root class="EXPRESSION_RULE" feature="make"/>
+		<cluster name="rules" location=".\" recursive="true"/>
+	</target>
+	<target name="procedure_call_rule" extends="rules">
+		<root class="PROCEDURE_CALL_RULE" feature="make"/>
+		<cluster name="rules" location=".\" recursive="true"/>
+	</target>		
 	<target name="test" extends="rules">
 		<root class="TEST" feature="make"/>
 		<cluster name="rules" location=".\" recursive="true"/>
 	</target>
-
 </system>
