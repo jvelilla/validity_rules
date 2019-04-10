@@ -299,7 +299,22 @@
 		<root class="REPEATED_INHERITANCE_RULE_2" feature="make"/>
 		<cluster name="rules" location=".\" recursive="true"/>
 	</target>
-
+	<target name="constant_type_rule" extends="rules">
+		<root class="CONSTANT_TYPE_RULE" feature="make"/>
+		<cluster name="rules" location=".\" recursive="true"/>
+	</target>
+	<target name="root_procedure_rule_2" extends="rules">
+		<root class="ROOT_PROCEDURE_RULE_2" feature="make"/>
+		<cluster name="rules" location=".\" recursive="true"/>
+	</target>
+	<target name="root_procedure_rule_3" extends="rules">
+		<root class="ROOT_PROCEDURE_RULE_3 [TIME]" feature="make"/>
+		<cluster name="rules" location=".\" recursive="true"/>
+	</target>
+	<target name="root_procedure_rule_4" extends="rules">
+		<root class="ROOT_PROCEDURE_RULE_4 [STRING]" feature="make"/>
+		<cluster name="rules" location=".\" recursive="true"/>
+	</target>
 	<target name="test" extends="rules">
 		<root class="TEST" feature="make"/>
 		<cluster name="rules" location=".\" recursive="true"/>
