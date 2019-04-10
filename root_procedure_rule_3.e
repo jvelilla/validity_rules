@@ -14,6 +14,7 @@ feature
 
 	make
 		do
+			{F}.g
 		end
 
 end

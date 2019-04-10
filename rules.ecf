@@ -315,6 +315,23 @@
 		<root class="ROOT_PROCEDURE_RULE_4 [STRING]" feature="make"/>
 		<cluster name="rules" location=".\" recursive="true"/>
 	</target>
+	<target name="static_class_type_rule" extends="rules">
+		<root class="STATIC_CLASS_TYPE_RULE" feature="make"/>
+		<cluster name="rules" location=".\" recursive="true"/>
+	</target>
+	<target name="constraint_generic_rule" extends="rules">
+		<root class="CONSTRAINT_GENERIC_RULE" feature="make"/>
+		<cluster name="rules" location=".\" recursive="true"/>
+	</target>
+	<target name="formal_generic_rule" extends="rules">
+		<root class="FORMAL_GENERIC_RULE" feature="make"/>
+		<cluster name="rules" location=".\" recursive="true"/>
+	</target>
+		<target name="formal_generic_rule_2" extends="rules">
+		<root class="FORMAL_GENERIC_RULE_2" feature="make"/>
+		<cluster name="rules" location=".\" recursive="true"/>
+	</target>
+
 	<target name="test" extends="rules">
 		<root class="TEST" feature="make"/>
 		<cluster name="rules" location=".\" recursive="true"/>
