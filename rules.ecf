@@ -279,6 +279,18 @@
 		<cluster name="rules" location=".\" recursive="true"/>
 	</target>
 
+	<target name="select_rule_1" extends="rules">
+		<root class="SELECT_RULE_1" feature="make"/>
+		<cluster name="rules" location=".\" recursive="true"/>
+	</target>
+	<target name="select_rule_2" extends="rules">
+		<root class="SELECT_RULE_2" feature="make"/>
+		<cluster name="rules" location=".\" recursive="true"/>
+	</target>
+	<target name="select_rule_3" extends="rules">
+		<root class="SELECT_RULE_3" feature="make"/>
+		<cluster name="rules" location=".\" recursive="true"/>
+	</target>
 
 	<target name="test" extends="rules">
 		<root class="TEST" feature="make"/>

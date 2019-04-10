@@ -9,11 +9,18 @@ class
 inherit
 
 	CLASS_A
+		redefine
+			h
+		end
 
 
 feature -- Access
 
-	f: INTEGER
-			-- Constant f.
 
+	h: INTEGER
+		do
+
+		end
+
+	h: TEST
 end

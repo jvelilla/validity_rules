@@ -1,6 +1,5 @@
 note
 	description: "Summary description for {CLASS_A}."
-	author: ""
 	date: "$Date$"
 	revision: "$Revision$"
 
@@ -10,4 +9,9 @@ class
 feature -- Access
 
 	f: INTEGER
+
+	h: BOOLEAN
+		do
+
+		end
 end
