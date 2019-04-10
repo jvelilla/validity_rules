@@ -250,8 +250,34 @@
 		<root class="CREATE_RULE_6" feature="make"/>
 		<cluster name="rules" location=".\" recursive="true"/>
 	</target>
-
-
+	<target name="ecma_generic_derivation_rule" extends="rules">
+		<root class="ECMA_GENERIC_DERIVATION_RULE" feature="make"/>
+		<cluster name="rules" location=".\" recursive="true"/>
+	</target>
+	<target name="inheritance_rule" extends="rules">
+		<root class="INHERITANCE_RULE" feature="make"/>
+		<cluster name="rules" location=".\" recursive="true"/>
+	</target>
+	<target name="inheritance_rule_2" extends="rules">
+		<root class="INHERITANCE_RULE_2" feature="make"/>
+		<cluster name="rules" location=".\" recursive="true"/>
+	</target>
+	<target name="expanded_client_rule" extends="rules">
+		<root class="EXPANDED_CLIENT_RULE" feature="make"/>
+		<cluster name="rules" location=".\" recursive="true"/>
+	</target>
+	<target name="export_list_rule" extends="rules">
+		<root class="EXPORT_LIST_RULE" feature="make"/>
+		<cluster name="rules" location=".\" recursive="true"/>
+	</target>
+	<target name="export_list_rule_2" extends="rules">
+		<root class="EXPORT_LIST_RULE_2" feature="make"/>
+		<cluster name="rules" location=".\" recursive="true"/>
+	</target>
+	<target name="export_list_rule_3" extends="rules">
+		<root class="EXPORT_LIST_RULE_3" feature="make"/>
+		<cluster name="rules" location=".\" recursive="true"/>
+	</target>
 
 
 	<target name="test" extends="rules">
