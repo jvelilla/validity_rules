@@ -291,6 +291,14 @@
 		<root class="SELECT_RULE_3" feature="make"/>
 		<cluster name="rules" location=".\" recursive="true"/>
 	</target>
+	<target name="repeated_inheritance_rule_1" extends="rules">
+		<root class="REPEATED_INHERITANCE_RULE_1" feature="make"/>
+		<cluster name="rules" location=".\" recursive="true"/>
+	</target>
+	<target name="repeated_inheritance_rule_2" extends="rules">
+		<root class="REPEATED_INHERITANCE_RULE_2" feature="make"/>
+		<cluster name="rules" location=".\" recursive="true"/>
+	</target>
 
 	<target name="test" extends="rules">
 		<root class="TEST" feature="make"/>
