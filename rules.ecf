@@ -1,4 +1,5 @@
-﻿<system xmlns="http://www.eiffel.com/developers/xml/configuration-1-20-0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.eiffel.com/developers/xml/configuration-1-20-0 http://www.eiffel.com/developers/xml/configuration-1-20-0.xsd" name="rules" uuid="F47B1A8C-8118-4693-8C92-9622B51A4169">
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<system xmlns="http://www.eiffel.com/developers/xml/configuration-1-20-0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.eiffel.com/developers/xml/configuration-1-20-0 http://www.eiffel.com/developers/xml/configuration-1-20-0.xsd" name="rules" uuid="F47B1A8C-8118-4693-8C92-9622B51A4169">
 	<target name="rules" abstract="true">
 		<file_rule>
 			<exclude>/CVS$</exclude>
@@ -83,10 +84,6 @@
 		<cluster name="rules" location=".\" recursive="true">
 			<cluster name="duplicate" location="$|duplicate\"/>
 		</cluster>
-	</target>
-	<target name="exported_rule" extends="rules">
-		<root class="EXPORTED_RULE" feature="make"/>
-		<cluster name="rules" location=".\" recursive="true"/>
 	</target>
 	<target name="deferred_feature_rule" extends="rules">
 		<root class="DEFERRED_FEATURE_RULE" feature="make"/>
@@ -392,6 +389,110 @@
 	<target name="replication_rule" extends="rules">
 		<root class="REPLICATION_RULE" feature="make"/>
 		<setting name="old_feature_replication" value="false"/>
+		<cluster name="rules" location=".\" recursive="true"/>
+	</target>
+	<target name="export_rule" extends="rules">
+		<root class="EXPORT_RULE" feature="make"/>
+		<cluster name="rules" location=".\" recursive="true"/>
+	</target>
+	<target name="loop_variant_rule" extends="rules">
+		<root class="LOOP_VARIANT_RULE" feature="make"/>
+		<cluster name="rules" location=".\" recursive="true"/>
+	</target>
+	<target name="assigner_command_rule_5" extends="rules">
+		<root class="ASSIGNER_COMMAND_RULE_5" feature="make"/>
+		<cluster name="rules" location=".\" recursive="true"/>
+	</target>
+	<target name="stable_attribute_rule" extends="rules">
+		<root class="STABLE_ATTRIBUTE_RULE" feature="make"/>
+		<cluster name="rules" location=".\" recursive="true"/>
+	</target>
+
+	<target name="instance_free_rule" extends="rules">
+		<root class="INSTANCE_FREE_RULE" feature="make"/>
+		<option warning="true" full_class_checking="false">
+			<assertions precondition="true" postcondition="true" check="true" invariant="true" loop="true" supplier_precondition="true"/>
+		</option>
+		<cluster name="rules" location=".\" recursive="true"/>
+	</target>
+	<target name="precursor_rule" extends="rules">
+		<root class="PRECURSOR_RULE" feature="make"/>
+		<cluster name="rules" location=".\" recursive="true"/>
+	</target>
+	<target name="precursor_rule_2" extends="rules">
+		<root class="PRECURSOR_RULE_2" feature="make"/>
+		<cluster name="rules" location=".\" recursive="true"/>
+	</target>
+	<target name="assignment_rule" extends="rules">
+		<root class="ASSIGNMENT_RULE" feature="make"/>
+		<cluster name="rules" location=".\" recursive="true"/>
+	</target>
+	<target name="identifier_rule_1" extends="rules">
+		<root class="IDENTIFIER_RULE_1" feature="make"/>
+		<cluster name="rules" location=".\" recursive="true"/>
+	</target>
+	<target name="identifier_rule_2" extends="rules">
+		<root class="IDENTIFIER_RULE_2" feature="make"/>
+		<cluster name="rules" location=".\" recursive="true"/>
+	</target>
+	<target name="identifier_rule_3" extends="rules">
+		<root class="IDENTIFIER_RULE_3" feature="make"/>
+		<cluster name="rules" location=".\" recursive="true"/>
+	</target>
+	<target name="create_rule_7" extends="rules">
+		<root class="CREATE_RULE_7 [STRING]" feature="make"/>
+		<cluster name="rules" location=".\" recursive="true"/>
+	</target>
+	<target name="object_call_rule_7" extends="rules">
+		<root class="CREATE_RULE_7 [STRING]" feature="make"/>
+		<cluster name="rules" location=".\" recursive="true"/>
+	</target>
+	<target name="argument_rule" extends="rules">
+		<root class="ARGUMENT_RULE [STRING]" feature="make"/>
+		<cluster name="rules" location=".\" recursive="true"/>
+	</target>
+	<target name="assignment_rule_1" extends="rules">
+		<root class="ASSIGNMENT_RULE_1 [STRING]" feature="make"/>
+		<cluster name="rules" location=".\" recursive="true"/>
+	</target>
+	<target name="create_rule_8" extends="rules">
+		<root class="CREATE_RULE_8" feature="make"/>
+		<cluster name="rules" location=".\" recursive="true"/>
+	</target>
+	<target name="create_rule_9" extends="rules">
+		<root class="CREATE_RULE_9" feature="make"/>
+		<cluster name="rules" location=".\" recursive="true"/>
+	</target>
+	<target name="create_rule_10" extends="rules">
+		<root class="CREATE_RULE_10" feature="make"/>
+		<cluster name="rules" location=".\" recursive="true"/>
+	</target>
+	<target name="create_rule_11" extends="rules">
+		<root class="CREATE_RULE_11" feature="make"/>
+		<cluster name="rules" location=".\" recursive="true"/>
+	</target>
+	<target name="create_rule_12" extends="rules">
+		<root class="CREATE_RULE_12" feature="make"/>
+		<cluster name="rules" location=".\" recursive="true"/>
+	</target>
+	<target name="loop_rule_3" extends="rules">
+		<root class="LOOP_RULE_3" feature="make"/>
+		<cluster name="rules" location=".\" recursive="true"/>
+	</target>
+	<target name="naming_rule_1" extends="rules">
+		<root class="NAMING_RULE_1" feature="make"/>
+		<cluster name="rules" location=".\" recursive="true"/>
+	</target>
+	<target name="naming_rule_2" extends="rules">
+		<root class="NAMING_RULE_2" feature="make"/>
+		<cluster name="rules" location=".\" recursive="true"/>
+	</target>
+	<target name="naming_rule_3" extends="rules">
+		<root class="NAMING_RULE_3" feature="make"/>
+		<cluster name="rules" location=".\" recursive="true"/>
+	</target>
+	<target name="naming_rule_4" extends="rules">
+		<root class="NAMING_RULE_4" feature="make"/>
 		<cluster name="rules" location=".\" recursive="true"/>
 	</target>
 
