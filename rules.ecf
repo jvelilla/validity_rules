@@ -12,7 +12,7 @@
 		</option>
 		<setting name="console_application" value="true"/>
 		<setting name="dead_code_removal" value="feature"/>
-		<library name="base" location="$ISE_LIBRARY\library\base\base.ecf"/>
+		<library name="base" location="$ISE_LIBRARY\library\base\base.ecf" use_application_options="true"/>
 	</target>
 	<target name="feature_name_rule" extends="rules">
 		<root class="FEATURE_NAME_RULE" feature="default_create"/>
@@ -349,6 +349,55 @@
 		<root class="CATCALL_RULE" feature="make"/>
 		<cluster name="rules" location=".\" recursive="true"/>
 	</target>
+	<target name="external_cpp_rule" extends="rules">
+		<root class="EXTERNAL_CPP_RULE" feature="make"/>
+		<cluster name="rules" location=".\" recursive="true"/>
+	</target>
+	<target name="external_cpp_rule_2" extends="rules">
+		<root class="EXTERNAL_CPP_RULE_2" feature="make"/>
+		<cluster name="rules" location=".\" recursive="true"/>
+	</target>
+	<target name="external_cpp_rule_3" extends="rules">
+		<root class="EXTERNAL_CPP_RULE_3" feature="make"/>
+		<cluster name="rules" location=".\" recursive="true"/>
+	</target>
+	<target name="external_cpp_rule_4" extends="rules">
+		<root class="EXTERNAL_CPP_RULE_4" feature="make"/>
+		<cluster name="rules" location=".\" recursive="true"/>
+	</target>
+	<target name="fresh_identifier_rule" extends="rules">
+		<root class="FRESH_IDENTIFIER_RULE" feature="make"/>
+		<cluster name="rules" location=".\" recursive="true"/>
+	</target>
+	<target name="loop_rule" extends="rules">
+		<root class="LOOP_RULE" feature="make"/>
+		<cluster name="rules" location=".\" recursive="true"/>
+	</target>
+	<target name="loop_rule_2" extends="rules">
+		<root class="LOOP_RULE_2" feature="make"/>
+		<cluster name="rules" location=".\" recursive="true"/>
+	</target>
+	<target name="separate_target_rule" extends="rules">
+		<root class="SEPARATE_TARGET_RULE" feature="make"/>
+		<cluster name="rules" location=".\" recursive="true"/>
+	</target>
+	<target name="inline_separate_rule" extends="rules">
+		<root class="INLINE_SEPARATE_RULE" feature="make"/>
+		<cluster name="rules" location=".\" recursive="true"/>
+	</target>
+	<target name="not_supported_rule" extends="rules">
+		<root class="NOT_SUPPORTED_RULE" feature="make"/>
+		<cluster name="rules" location=".\" recursive="true"/>
+	</target>
+	<target name="replication_rule" extends="rules">
+		<root class="REPLICATION_RULE" feature="make"/>
+		<setting name="old_feature_replication" value="false"/>
+		<cluster name="rules" location=".\" recursive="true"/>
+	</target>
+
+
+
+
 	<target name="test" extends="rules">
 		<root class="TEST" feature="make"/>
 		<cluster name="rules" location=".\" recursive="true"/>

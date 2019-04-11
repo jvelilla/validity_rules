@@ -15,12 +15,7 @@ feature -- Initialization
 		do
 
 		ensure
-			old init
-		end
-
-	init
-		do
-
+			old (old 1 = 1)
 		end
 
 end
