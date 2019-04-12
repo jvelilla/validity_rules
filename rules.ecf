@@ -495,7 +495,30 @@
 		<root class="NAMING_RULE_4" feature="make"/>
 		<cluster name="rules" location=".\" recursive="true"/>
 	</target>
-
+	<target name="naming_rule_5" extends="rules">
+		<root class="NAMING_RULE_5" feature="make"/>
+		<cluster name="rules" location=".\" recursive="true"/>
+	</target>
+	<target name="naming_rule_6" extends="rules">
+		<root class="NAMING_RULE_6" feature="make"/>
+		<cluster name="rules" location=".\" recursive="true"/>
+	</target>
+	<target name="naming_rule_7" extends="rules">
+		<root class="NAMING_RULE_7" feature="make"/>
+		<cluster name="rules" location=".\" recursive="true"/>
+	</target>
+	<target name="naming_rule_8" extends="rules">
+		<root class="NAMING_RULE_8" feature="make"/>
+		<cluster name="rules" location=".\" recursive="true"/>
+	</target>
+	<target name="anchored_rule_1" extends="rules">
+		<root class="ANCHORED_TYPE_RULE_1" feature="make"/>
+		<cluster name="rules" location=".\" recursive="true"/>
+	</target>
+	<target name="expanded_rule_1" extends="rules">
+		<root class="EXPANDED_RULE_1" feature="make"/>
+		<cluster name="rules" location=".\" recursive="true"/>
+	</target>
 
 
 
