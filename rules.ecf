@@ -407,7 +407,6 @@
 		<root class="STABLE_ATTRIBUTE_RULE" feature="make"/>
 		<cluster name="rules" location=".\" recursive="true"/>
 	</target>
-
 	<target name="instance_free_rule" extends="rules">
 		<root class="INSTANCE_FREE_RULE" feature="make"/>
 		<option warning="true" full_class_checking="false">
@@ -519,9 +518,49 @@
 		<root class="EXPANDED_RULE_1" feature="make"/>
 		<cluster name="rules" location=".\" recursive="true"/>
 	</target>
-
-
-
+	<target name="invalid_assignment_rule_1" extends="rules">
+		<root class="INVALID_ARGUMENT_RULE" feature="make"/>
+		<cluster name="rules" location=".\" recursive="true"/>
+	</target>
+	<target name="multi_constraint_rule_1" extends="rules">
+		<root class="MULTI_CONSTRAINT_RULE_1" feature="make"/>
+		<cluster name="rules" location=".\" recursive="true"/>
+	</target>
+	<target name="multi_constraint_rule_2" extends="rules">
+		<root class="MULTI_CONSTRAINT_RULE_2" feature="make"/>
+		<cluster name="rules" location=".\" recursive="true"/>
+	</target>
+	<target name="multi_constraint_rule_3" extends="rules">
+		<root class="MULTI_CONSTRAINT_RULE_3" feature="make"/>
+		<cluster name="rules" location=".\" recursive="true"/>
+	</target>
+	<target name="redeclaration_rule_1" extends="rules">
+		<root class="REDECLARATION_RULE" feature="make"/>
+		<capability>
+			<void_safety use="none"/>
+		</capability>
+		<cluster name="rules" location=".\" recursive="true"/>
+	</target>
+	<target name="feature_call_rule" extends="rules">
+		<root class="FEATURE_CALL_RULE" feature="make"/>
+		<cluster name="rules" location=".\" recursive="true"/>
+	</target>
+	<target name="feature_call_rule_2" extends="rules">
+		<root class="FEATURE_CALL_RULE_2" feature="make"/>
+		<cluster name="rules" location=".\" recursive="true"/>
+	</target>
+	<target name="attribute_rule_1" extends="rules">
+		<root class="ATTRIBUTE_RULE_1" feature="make"/>
+		<cluster name="rules" location=".\" recursive="true"/>
+	</target>
+	<target name="instance_free_rule_1" extends="rules">
+		<root class="INSTANCE_FREE_RULE_1" feature="make"/>
+		<cluster name="rules" location=".\" recursive="true"/>
+	</target>	
+	<target name="separate_rule_1" extends="rules">
+		<root class="SEPARATE_RULE_1" feature="make"/>
+		<cluster name="rules" location=".\" recursive="true"/>
+	</target>		
 	<target name="test" extends="rules">
 		<root class="TEST" feature="make"/>
 		<cluster name="rules" location=".\" recursive="true"/>
