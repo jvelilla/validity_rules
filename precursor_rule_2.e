@@ -14,7 +14,8 @@ feature
 	make
 		require
 			Precursor
+			is_valid: 1 = 1
 		do
-			
+
 		end
 end

@@ -12,5 +12,8 @@ feature
 	make
 		do
 			(create {NONE}).do_nothing
+			create {ARRAYED_LIST [NATURAL]} list.make (5)
 		end
+
+	list: LIST [INTEGER]
 end

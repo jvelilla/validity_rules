@@ -79,8 +79,8 @@
 		<root class="UNKNOWN_ROOT_CLASS" feature="make"/>
 		<cluster name="rules" location=".\" recursive="true"/>
 	</target>
-	<target name="duplicate_class" extends="rules">
-		<root class="DUPLICATE_CLASS" feature="make"/>
+	<target name="root_class_name_ambiguous" extends="rules">
+		<root class="TEST" feature="make"/>
 		<cluster name="rules" location=".\" recursive="true">
 			<cluster name="duplicate" location="$|duplicate\"/>
 		</cluster>
@@ -326,6 +326,10 @@
 		<root class="FORMAL_GENERIC_RULE_2" feature="make"/>
 		<cluster name="rules" location=".\" recursive="true"/>
 	</target>
+	<target name="formal_generic_rule_3" extends="rules">
+		<root class="FORMAL_GENERIC_RULE_3" feature="make"/>
+		<cluster name="rules" location=".\" recursive="true"/>
+	</target>
 	<target name="convert_rule" extends="rules">
 		<root class="CONVERT_RULE" feature="make"/>
 		<cluster name="rules" location=".\" recursive="true"/>
@@ -340,6 +344,10 @@
 	</target>
 	<target name="redefinition_rule_17" extends="rules">
 		<root class="REDEFINITION_RULE_17" feature="make"/>
+		<cluster name="rules" location=".\" recursive="true"/>
+	</target>
+	<target name="redefinition_rule_18" extends="rules">
+		<root class="REDEFINITION_RULE_18" feature="make"/>
 		<cluster name="rules" location=".\" recursive="true"/>
 	</target>
 	<target name="catcall_rule" extends="rules">
@@ -560,7 +568,15 @@
 	<target name="separate_rule_1" extends="rules">
 		<root class="SEPARATE_RULE_1" feature="make"/>
 		<cluster name="rules" location=".\" recursive="true"/>
-	</target>		
+	</target>
+	<target name="instance_free_rule_3" extends="rules">
+		<root class="INSTANCE_FREE_RULE_2" feature="make"/>
+		<cluster name="rules" location=".\" recursive="true"/>
+	</target>
+	<target name="initialization_variable_rule" extends="rules">
+		<root class="INITIALIZATION_VARIABLE_RULE" feature="make"/>
+		<cluster name="rules" location=".\" recursive="true"/>
+	</target>						
 	<target name="test" extends="rules">
 		<root class="TEST" feature="make"/>
 		<cluster name="rules" location=".\" recursive="true"/>
